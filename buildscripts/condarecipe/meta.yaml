@@ -1,0 +1,45 @@
+package:
+  name: accumuloadapter
+  version: "2.0.0"
+
+source:
+  path: ../../
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - numpy
+    - cython
+    - boost 1.61.0
+    - libthrift 0.10.0
+    - thrift 0.10.0
+
+  run:
+    - python
+    - numpy
+    - pandas
+    - six
+    - ordereddict     [py26]
+    - boost 1.61.0
+    - libthrift  0.10.0
+    - thrift 0.10.0
+
+test:
+  requires:
+    - nose
+    - pytest
+    - pyaccumulo
+    - geodocker-accumulo [unix]
+
+  imports:
+    - accumuloadapter
+    - accumuloadapter.core
+    - accumuloadapter.core.AccumuloAdapter
+
+about:
+  home: http://www.continuum.io/
+  license: BSD
+  summary: python interface for Accumulo database

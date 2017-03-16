@@ -1,0 +1,21 @@
+package:
+  name: geodocker-accumulo
+  version: "1.0.0"
+
+source:
+  git_url: https://github.com/geodocker/geodocker-accumulo.git
+  git_rev: a87da6c329a52f4dd8b3e1b8f52f6536b4b1265b
+  patches:
+    - geodocker-accumulo-localized.patch
+
+test:
+  commands:
+    - docker images | grep -q 'quay\.io/geodocker/zookeeper'
+    - docker images | grep -q 'quay\.io/geodocker/hdfs'
+    - docker images | grep -q 'quay\.io/geodocker/accumulo' 
+
+about:
+  home: https://github.com/geodocker/geodocker-accumulo
+  license: Apache License 2.0
+  summary: 'Dockerized Apache Accumulo database environment.'
+  license_family: APACHE

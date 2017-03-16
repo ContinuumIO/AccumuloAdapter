@@ -1,0 +1,28 @@
+package:
+  name: pyaccumulo
+  version: "1.5.0.9"
+
+source:
+  fn: pyaccumulo-1.5.0.9.zip
+  url: https://github.com/jt6211/pyaccumulo/archive/1.5.0.9.zip
+  md5: 3f3bd6f7c17770b5e7db46b9dfb846a5
+  patches:
+    - pyaccumulo-py3.patch [py3k]
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - thrift
+    - pytest
+    - pytest-cov
+
+  run:
+    - python
+    - thrift
+
+about:
+  home: https://accumulo.apache.org/
+  license: Apache License 2.0
+  summary: 'Python bindings for the Apache Accumulo database.'
+  license_family: APACHE
