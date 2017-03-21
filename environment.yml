@@ -1,13 +1,18 @@
 name: accumuloadapter
+channels:
+  - gbrener
+  - defaults
+  - conda-forge
 dependencies:
-- python
-- ipython
-- numpy
-- pandas
-- pytest
-- cython
-- openssl
-- thrift =0.10.0
-- libthrift =0.10.0
-- boost
-- pytest-cov
+  - python
+  - ipython
+  - numpy
+  - pandas
+  - pytest
+  - cython
+  - openssl
+  - thrift =0.10.0
+  - libthrift =0.10.0
+  - boost
+  - pytest-cov
+  - pytest-xdist

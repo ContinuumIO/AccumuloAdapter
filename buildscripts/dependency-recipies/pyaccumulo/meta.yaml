@@ -13,9 +13,11 @@ requirements:
   build:
     - python
     - setuptools
-    - thrift
+    - thrift 0.10.0 [py3k]
+    - thrift 0.9.3 [py2k]
     - pytest
     - pytest-cov
+    - pytest-xdist
 
   run:
     - python
