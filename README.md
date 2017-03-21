@@ -27,7 +27,7 @@ Visual Studio 2008, Python 3.3 and 3.4 needs Visual Studio 2010, and Python
 
 1. Build the pyaccumulo dependency using the following command (replace Python version number with desired version):
    ```
-   conda build buildscripts/dependency-recipies/pyaccumulo --python 3.5
+   conda build -c gbrener -c defaults -c conda-forge buildscripts/dependency-recipies/pyaccumulo --python 3.5
    ```
 
 1. Build the geodocker-accumulo dependency using the following command (ensure that `docker-compose` is down beforehand):
