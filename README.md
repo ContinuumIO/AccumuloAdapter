@@ -127,5 +127,4 @@ Related projects
 - TextAdapter (CSV, JSON, etc): https://github.com/ContinuumIO/TextAdapter
 - DBAdapter (SQL derivatives): https://github.com/ContinuumIO/DBAdapter
 - PostgresAdapter (PostgreSQL): https://github.com/ContinuumIO/PostgresAdapter
-- AccumuloAdapter (Apache Accumulo): https://github.com/ContinuumIO/AccumuloAdapter
 - MongoAdapter (MongoDB): https://github.com/ContinuumIO/MongoAdapter
