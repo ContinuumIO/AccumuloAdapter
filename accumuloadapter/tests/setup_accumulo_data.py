@@ -2,6 +2,7 @@
 
 import pyaccumulo
 import logging
+import sys
 
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(module)s] %(levelname)s: %(message)s')
